@@ -1,0 +1,325 @@
+html, body {
+  background-color: #CAEBF2; 
+  margin: 0;
+  min-width: 320px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+header {
+  background-color: #757575;
+  color: #EFEFEF;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.info, textarea {
+  box-sizing: border-box;
+  border:3px solid #C9C9C9;
+  transition: 0.5s;
+  outline: none;
+} 
+
+.info:focus, textarea:focus {
+  border: 3px solid #A9A9A9;
+}
+
+select {
+  box-sizing: border-box;
+  outline: 3px solid #C9C9C9;
+  border: none;
+}
+
+select:focus {
+ outline: 3px solid #A9A9A9;
+}
+
+.button {
+  border: 3px solid #C9C9C9;
+  cursor: pointer; 
+  outline: none;
+}
+
+.button {
+  cursor: pointer; 
+}
+
+.button:after, .button:hover {
+  border: 3px solid #A9A9A9;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding-bottom:8px;
+}
+
+.required {
+  color: red;
+}
+
+textarea {
+  resize: none;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1em;
+}
+
+footer {
+    text-align: center;
+    background-color: #757575;
+    color: #EFEFEF;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+@media screen
+and (min-width:320px) 
+and (max-width:479px) {
+  
+  body {
+    background-color: #EFEFEF; 
+  }
+  
+  header {
+    width: 100vw;
+    margin: 0;
+    padding: 5px 0 15px 0;
+  }
+  
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: 1.3em;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  form {
+    padding: 5vw;
+  }
+  
+  .info-label {
+    width: 100%;
+    display: block;
+    padding-top: 10px;  
+  }
+  
+  .label {
+    width: 100%;
+    display: block;
+    padding-top: 30px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 8px 0 0 0;
+  }
+  
+  .info {
+    width: 100%;
+    padding: 5px 0;
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  
+  select {
+    padding: 7px;
+    margin: 8px 0 0 3px;
+    border-color: #A9A9A9;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    margin: 15px 0 0 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+  }
+  
+  .button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-top: 15px;
+  }
+  
+  footer {
+    padding: 5px 0;
+    font-size: 0.8em;
+  }
+}
+
+@media screen
+and (min-width:480px)
+and (max-width:767px) {
+  
+  body {
+    background-color: #EFEFEF; 
+  }
+  
+  header {
+    width: 100vw;
+    margin: 0;
+    padding: 15px 0 25px 0;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  header p {
+    font-size: 1.4em;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  form {
+    padding: 5vw;
+  }
+  
+  .info-label {
+    width: 100%;
+    display: block;
+    padding-top: 15px;  
+  }
+  
+  .label {
+    width: 100%;
+    display: block;
+    padding-top: 30px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 8px 0 0 0;
+  }
+  
+  .info {
+    width: 100%;
+    padding: 5px 0;
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  
+  select {
+    padding: 7px;
+    margin: 12px 0 0 3px;
+    border-color: #A9A9A9;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    margin: 15px 0 0 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;
+  }
+  
+  .button {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 30px;
+    margin-top: 25px;
+  }
+  
+  footer {
+    padding: 8px 0;
+    font-size: 0.9em;
+  }  
+}
+
+@media screen and (min-width:768px) {
+  
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  main {
+    width: 80vw;
+    margin: 50px auto;
+  }
+  
+  form {
+    background-color: #EFEFEF;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 25px;
+    padding: 25px;
+  }
+  
+  header {
+    padding: 5px 0 5px 0;
+    margin: 15px 0 0 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  header h1 {
+    font-size: 2.7em;
+    padding: 15px 0;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.7em;
+    padding: 0 0 15px 0;
+    margin: 0;
+  }
+  
+  .info-label, .label {
+    grid-row: auto;
+    text-align: right;
+    margin-right: 40px;
+    font-weight: bold;
+  }
+  
+  .info-label {
+    align-self: center;
+  }
+  
+  .info {
+    grid-row: auto;
+    padding: 1em;
+  }
+  
+  select {
+    width: 100px;
+    margin-left: 3px;
+  }
+  
+  ul {
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+  
+  textarea {
+   width: 100%;
+   height: 200px;
+  }
+  
+  .button {
+    grid-column: 2/3;
+    justify-self: end;
+    width: 100px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  footer {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 0;
+    font-size: 0.9em;
+  } 
+}

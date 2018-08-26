@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <article>
+      <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Let us know about your experience and how to improve our food service</p>
+      </header>
+      <form id="survey-form" action"#" method="POST">
+        <label for="name" id="name-label" class="info-label">Name: <span class="required">*</span></label>
+          <input type="text" name="name" id="name" required placeholder="Enter your name" class="info">
+        
+        <label for="email" id="email-label" class="info-label">Email: <span class="required">*</span></label>
+          <input type="email" name="email" id="email" required placeholder="Enter your email address" class="info">
+        
+        <label for="number" id="number-label" class="info-label">Age: <span class="required">*</span></label>
+          <input type="number" name="age" id="number" min="18" max="120" required placeholder="Enter your age" class="info">
+        
+        <label for="dropdown" class="label">Which meal menu did you choose?</label> 
+          <select name="xxxxx" id="dropdown">
+            <option value="menu1">Menu 1</option>
+            <option value="menu2">Menu 2</option>
+            <option value="menu3">Menu 3</option>
+            <option value="menu4">Menu 4</option>
+            <option value="menu5">Menu 5</option>
+          </select>
+        
+        <label class="label">How would you rate your overall experience?</label>
+        <ul>
+          <li><label><input type="radio" name="rating" value="excellent">Excellent</label></li>
+          <li><label><input type="radio" name="rating" value="good">Good</label></li>
+          <li><label><input type="radio" name="rating" value="ok">OK</label></li>
+          <li><label><input type="radio" name="rating" value="bad">Bad</label></li>
+          <li><label><input type="radio" name="rating" value="terrible">Terrible</label></li>
+        </ul>
+        
+        <label class="label">What do you consider important when choosing the food service (Check all that apply):</label>
+        <ul>
+          <li><label><input type="checkbox" value="ingredients"></label>Source of ingredients</li>
+          <li><label><input type="checkbox" value="money"></label>Value for money</li>
+          <li><label><input type="checkbox" value="convenience"></label>Customer convenience</li>
+          <li><label><input type="checkbox" value="health"></label>How healthy the food is</li>
+          <li><label><input type="checkbox" value="taste"></label>How tasty the food is</li>
+        </ul>
+        
+        <label class="label">Any suggestions or comments?</label>
+        <textarea name="message" placeholder="Let us know here."></textarea>
+        
+        <input type="submit" id="submit" value="Submit" class="button">
+        
+      </form>
+      <footer><div><span class="required">*</span> This field is required
+        </div>Created by Ebrahem</footer>
+    </article>
+  </main>
+</body>
+</html>
